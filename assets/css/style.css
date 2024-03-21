@@ -30,6 +30,10 @@
 
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 :root {
     --color-body: #000000;
     --color-text: #ffff;
@@ -41,6 +45,7 @@ body {
     color: var(--color-text);
     font-family: 'Nacelle', sans-serif;  
     overflow-x: hidden;
+    
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -81,18 +86,6 @@ img {
 }
 
 
-@media (max-width: 768px) {
-    .container {
-      max-width: 720px;
-    }
-  }
-  
-  @media (max-width: 576px) {
-    .container {
-      max-width: 480px;
-    }
-  }
-
 /*Navbar*/
 
 .navbar .nav-link:hover {
@@ -131,7 +124,8 @@ img {
     margin-bottom: -100px;
 }
 
-@media (max-width:991px) {
+
+@media  (max-width:991px) {
     #header {
         padding-left: 20px;
         padding-right: 20px;
@@ -230,7 +224,6 @@ img {
 
 .subfooter {
     position: relative;
-    display: flex;
     padding: 150px 0;
     background-color: #eecac1;
     color: #000000;
@@ -240,10 +233,6 @@ img {
     animation-name: bgColour;
 }
 
-.subfooter_container {
-    width: 100%;
-    padding: 0 30px;
-}
 
 .subfooter_heading {
     padding-bottom: 6px;
@@ -334,25 +323,6 @@ img {
     }
 }
 
-@media screen and (max-width: 577px) {
-    .h1 {
-        line-height: 1;
-        font-size: calc(25px + 4vw);
-    }
-}
-
-@media screen and (min-width: 577px) {
-    .subfooter {
-        padding:60px 0
-    }
-}
-
-@media screen and (min-width: 769px) {
-    .subfooter {
-        padding:80px 0
-    }
-}
-
 /* Footer */
 
 @media screen and (max-width: 768px) {
@@ -385,21 +355,58 @@ img {
 /* About */
 
 #about-hero {
-    margin-top: 150px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+@media screen and (max-width: 576px) {
+    #about-hero {
+        background-position: 70%;
+    }
+}
+
+@media screen and (max-width: 1230px) {
+    #about-hero {
+        background-position: 70%;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    #about-hero {
+        background-position: 50%;
+    }
+}
+
+.title-contrast {
+    color: #5a5a5f;
 }
 
 #capabilities {
     margin-top: -50px;
 }
 
+  #education {
+    margin-top: -100px;
+    margin-bottom: -100px;
+  }
 
-.btn-res {
-    width: 15% !important;
-}
+  .img-profile {
+    width: 500px;
+  }
 
-  @media (max-width: 768px) {
-    .btn-res {
-      width: 50% !important;
+  @media screen and (max-width: 576px) {
+    .img-profile {
+        width: 500px;
+        margin-top: 40px;
+        margin-bottom: 100px !important;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .img-profile {
+        width: 500px;
+        margin-top: 40px;
+        margin-bottom: 50px;
     }
   }
 
