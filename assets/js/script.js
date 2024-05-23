@@ -38,3 +38,5 @@ function SendMail () {
     })
     .catch(err=>console.log(err));
 }
+
+AOS.init();
